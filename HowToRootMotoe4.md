@@ -1,3 +1,4 @@
+# HowToRootMotoe4
 To get root access on Moto e4, first I tried some apps like Kingroot, which can simply root Android without connecting with PC.
 But it seems Moto e4 is not in their database. So we need to connect to PC (or Mac) to get root access.
 
