@@ -19,6 +19,10 @@ It's output is like:
 
 Usage:
 
+First we can get the source code from https://github.com/keithw/multisend/
+The source code saturatr.cc is under sender folder.
+To compile it, we need c++11.
+
 To use this tool, we need to run on both server and client side.
 
 On the server side:
@@ -28,3 +32,23 @@ On the server side:
 On the client side:
 
     ./saturatr [RELIABLE_IP RELIABLE_DEV TEST_IP TEST_DEV SERVER_IP]
+    
+There are two interfaces one is used as relibale the other is test.
+Saturateservo (or Acker) will send data (or ACK) packer using test device (or reliable) and listening to relibale device (or test).
+
+Here I just set the reliable and the test as the same interface.
+
+
+To test:
+
+Here I built an 24Mbps link using Mahimahi.
+    
+    mm-link tracefile.up tracefile.down
+    
+Where the trace file sends 2 packets per ms. (So it would be 24Mbps)
+In this way Mahimahi will build a container which holds two ip address (like 100.64.0.3 and 100.64.0.4).
+Then inside the container we can run saturatr server, outside the container we can run saturatr client.
+
+
+
+
