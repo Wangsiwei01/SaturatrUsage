@@ -18,7 +18,7 @@ Step 3: Unlock Moto e4
   
   Then open the terminal (command line in Windows) and cd into the FastBoot folder we just downloaded at step2.
   There is a file called fastboot. Run the following commands:
-    
+  
       ./fastboot oem get_unlock_data
   It will show the bootloader numders of your device.
   Go to https://motorola-global-portal.custhelp.com/app/standalone/bootloader/unlock-your-device-a, follow the instructions and get the unlock code.
