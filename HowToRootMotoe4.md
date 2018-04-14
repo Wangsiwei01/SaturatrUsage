@@ -8,7 +8,7 @@ But it seems Moto e4 is not in their database. So we need to connect to PC (or M
   Then we can see the developer option appers. Go into Deloper option and enbale OEM UNLCOKING and USB DEBUGGING.
   Once done, power off the phone.
   
-**Step 2: Downlaod FastBoot:**
+**Step 2: Download FastBoot:**
 
   Because I am using Mac, so here I use Fastboot. There is also a guide on how to use fastboot on Windows.
     Fastboot for Mac: https://thetechslugs.com/wp-content/uploads/2017/08/android-fastboot-mac-linux.zip
