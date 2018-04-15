@@ -38,6 +38,15 @@ Saturateservo (or Acker) will send data (or ACK) packer using test device (or re
 
 Here I just set the reliable and the test as the same interface.
 
+Once we get the output files for server and client, we can use another tool to convert it to .pps tracefile which can use used as the input for Cellsim.
+The code can be found:
+https://github.com/keithw/multisend/blob/master/sender/trace-analysis/prep-for-simulation.py
+
+To use it:
+    
+    python prep-for-simulation.py <file-name> <session-number>
+
+Then we can get the output .pps files (uplink and downlink).
 
 To test:
 
@@ -48,6 +57,8 @@ Here I built an 24Mbps link using Mahimahi.
 Where the trace file sends 2 packets per ms. (So it would be 24Mbps)
 In this way Mahimahi will build a container which holds two ip address (like 100.64.0.3 and 100.64.0.4).
 Then inside the container we can run saturatr server, outside the container we can run saturatr client.
+After that I use prep-for-simulation.py to analysis the output results and convert them to .pps files.
+The result seems to be matched with 24Mbps (about 2 packets per ms).
 
 
 
