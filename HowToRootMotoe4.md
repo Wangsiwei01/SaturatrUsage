@@ -27,6 +27,7 @@ But it seems Moto e4 is not in their database. So we need to connect to PC (or M
   It will show the bootloader numders of your device.
   Go to https://motorola-global-portal.custhelp.com/app/standalone/bootloader/unlock-your-device-a, follow the instructions and get the unlock code.
   Then run:
+  
       ./fastboot oem unlock [unlock code]
   To unlock the phone.
     
